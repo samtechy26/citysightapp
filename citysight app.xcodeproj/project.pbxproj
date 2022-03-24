@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		2E21C8CA27E9F2EE00B88FDA /* citysight_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21C8C927E9F2EE00B88FDA /* citysight_appApp.swift */; };
-		2E21C8CC27E9F2EE00B88FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21C8CB27E9F2EE00B88FDA /* ContentView.swift */; };
+		2E21C8CC27E9F2EE00B88FDA /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21C8CB27E9F2EE00B88FDA /* LaunchView.swift */; };
 		2E21C8CE27E9F2F000B88FDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E21C8CD27E9F2F000B88FDA /* Assets.xcassets */; };
 		2E21C8D127E9F2F000B88FDA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E21C8D027E9F2F000B88FDA /* Preview Assets.xcassets */; };
+		2E21C8DB27EA20EE00B88FDA /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E21C8DA27EA20EE00B88FDA /* ContentModel.swift */; };
+		2E41A05027ECEEC100C10D05 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41A04F27ECEEC100C10D05 /* Business.swift */; };
+		2E41A05227ECF13300C10D05 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41A05127ECF13300C10D05 /* BusinessSearch.swift */; };
+		2E41A05527ECF47F00C10D05 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E41A05427ECF47F00C10D05 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E21C8C627E9F2EE00B88FDA /* citysight app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "citysight app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E21C8C927E9F2EE00B88FDA /* citysight_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = citysight_appApp.swift; sourceTree = "<group>"; };
-		2E21C8CB27E9F2EE00B88FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2E21C8CB27E9F2EE00B88FDA /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		2E21C8CD27E9F2F000B88FDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E21C8D027E9F2F000B88FDA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2E21C8DA27EA20EE00B88FDA /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		2E41A04F27ECEEC100C10D05 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		2E41A05127ECF13300C10D05 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		2E41A05427ECF47F00C10D05 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,11 @@
 		2E21C8C827E9F2EE00B88FDA /* citysight app */ = {
 			isa = PBXGroup;
 			children = (
+				2E41A05327ECF46C00C10D05 /* Helpers */,
+				2E21C8D927E9F3A200B88FDA /* ViewModels */,
+				2E21C8D827E9F39800B88FDA /* Models */,
+				2E21C8D727E9F38F00B88FDA /* Views */,
 				2E21C8C927E9F2EE00B88FDA /* citysight_appApp.swift */,
-				2E21C8CB27E9F2EE00B88FDA /* ContentView.swift */,
 				2E21C8CD27E9F2F000B88FDA /* Assets.xcassets */,
 				2E21C8CF27E9F2F000B88FDA /* Preview Content */,
 			);
@@ -65,6 +76,39 @@
 				2E21C8D027E9F2F000B88FDA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2E21C8D727E9F38F00B88FDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E21C8CB27E9F2EE00B88FDA /* LaunchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E21C8D827E9F39800B88FDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E41A04F27ECEEC100C10D05 /* Business.swift */,
+				2E41A05127ECF13300C10D05 /* BusinessSearch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E21C8D927E9F3A200B88FDA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E21C8DA27EA20EE00B88FDA /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2E41A05327ECF46C00C10D05 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2E41A05427ECF47F00C10D05 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E21C8CC27E9F2EE00B88FDA /* ContentView.swift in Sources */,
+				2E21C8CC27E9F2EE00B88FDA /* LaunchView.swift in Sources */,
+				2E41A05027ECEEC100C10D05 /* Business.swift in Sources */,
 				2E21C8CA27E9F2EE00B88FDA /* citysight_appApp.swift in Sources */,
+				2E41A05227ECF13300C10D05 /* BusinessSearch.swift in Sources */,
+				2E21C8DB27EA20EE00B88FDA /* ContentModel.swift in Sources */,
+				2E41A05527ECF47F00C10D05 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,10 +320,12 @@
 				DEVELOPMENT_TEAM = 2YBF2U9KY9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restaurants and sights near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "\"\" UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,10 +351,12 @@
 				DEVELOPMENT_TEAM = 2YBF2U9KY9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Grant permission to find restaurants and sights near you.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "\"\" UIInterfaceOrientationPortrait UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

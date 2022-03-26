@@ -14,21 +14,26 @@ struct HomeView: View {
     var body: some View {
         
         if model.restaurants.count != 0 || model.sights.count != 0{
-            if isMapShowing == false {
-                VStack(alignment: .leading){
-                    HStack{
-                        Image(systemName: "location")
-                        Text("San Fransisco")
-                        Spacer()
-                        Text("Switch to map")
+            NavigationView{
+                if isMapShowing == false {
+                    VStack(alignment: .leading){
+                        HStack{
+                            Image(systemName: "location")
+                            Text("San Fransisco")
+                            Spacer()
+                            Text("Switch to map")
+                        }
+                        Divider()
+                        BusinessListView()
                     }
-                    Divider()
+                    .padding([.horizontal, .top])
+                    .navigationBarHidden(true)
                 }
-                .padding([.horizontal, .top])
+                else{
+                    
+                }
             }
-            else{
-                
-            }
+            
         }
         else{
             // still waiting for api response, show spining

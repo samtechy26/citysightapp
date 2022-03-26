@@ -19,7 +19,7 @@ struct LaunchView: View {
         else if model.authorizationState == .authorizedAlways || model.authorizationState == .authorizedWhenInUse{
             // if approved, show home view
             HomeView()
-            BusinessListView()
+            
         }
         else{
             // if denied show devied view

@@ -15,6 +15,7 @@ class Business: Decodable, Identifiable, ObservableObject{
     var name:String?
     var imageUrl:String?
     var isClosed:Bool?
+    var url: String?
     var reviewCount:Int?
     var categories:[Category]
     var rating:Double?
@@ -34,6 +35,7 @@ class Business: Decodable, Identifiable, ObservableObject{
         
         case id
         case alias
+        case url
         case name
         case categories
         case rating
